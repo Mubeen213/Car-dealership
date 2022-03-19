@@ -19,9 +19,8 @@ public class Dealership {
         return new Car(this.cars[index]);
     }
 
-    public int search(String make, int budget){
-        for (int index = 0; index < this.cars.length; index++) {
-
+    public int search(String make, double budget){
+        for (int index = 0; index < cars.length; index++) {
             if(this.cars[index] == null){
                 continue;
             }
@@ -32,6 +31,7 @@ public class Dealership {
                 return index;
             }
         }
+        System.out.println("Your search did not match any results \n");
         return 404;
     }
 
