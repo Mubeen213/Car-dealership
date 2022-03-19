@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
 
-        Car nissan = new Car("Nissan",12000, 2000,"Red");
+        Car nissan = new Car("Nissan",12000, 2000,"Red",new String[]{"Tires", "Brakes"});
 
         System.out.println(nissan);
 
