@@ -13,6 +13,13 @@ public class Car {
         this.color = color;
     }
 
+    public Car(Car car){
+        this.make = car.make;
+        this.price = car.price;
+        this.year = car.year;
+        this.color = car.color;
+    }
+
     public String getMake(){
         return this.make;
     }
