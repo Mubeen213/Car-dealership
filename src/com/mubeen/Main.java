@@ -14,9 +14,15 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
 
-        Car nissan = new Car("Nissan",12000, 2000,"Red",new String[]{"Tires", "Brakes"});
+        Car cars[] = new Car[]{
+               new Car("Nissan",12000, 2000,"Red",new String[]{"Tires", "Brakes"})
+    };
 
-        System.out.println(nissan);
+        System.out.println(cars[0].toString());
+
+        Dealership dealership = new Dealership(cars);
+
+        System.out.println(dealership);
 
     }
 }
